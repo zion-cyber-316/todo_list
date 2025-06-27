@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="todoBox">
+    <form  method="POST"    action="/posts">
+    <div class="box">
+        <h1>Todo List</h1>
+        <input type="text" name="content" placeholder="Enter itam">
+        <button>Add</button>
+</div>
+</form>
+
+    <%for(post of posts){ %>
+        
+<div class="list">
+<p><%=post.id%></p>
+<p><%=post.content%></p>
+<form method="POST" action="/posts/<%=post.id%>?_method=DELETE">
+<button>Delete</button>
+</form>
+</div>
+<%}%>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+.box{
+    border: 2px solid rgb(114, 107, 107);
+    border-radius: 10px;
+    margin-top: 50px;
+    /* margin-left: 25%;
+    margin-right:25%; */
+    text-align: center;
+    width: 500px;
+}
+
+.list{
+    border: 2px solid red;
+  
+    width: 500px;
+
+ 
+    text-align: center;
+    margin-top: 10px;
+}
+.todoBox{
+    /* border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 550px; */
+    margin-left: 25%;
+}
